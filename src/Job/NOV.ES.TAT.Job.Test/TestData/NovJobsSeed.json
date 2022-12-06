@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "jobNumber": 426809,
+    "BusinessUnit": 5211865,
+    "CorpRigId": "E01D2659-8F78-E311-A7B6-0017A4771C44",
+    "Customer": 5316553,
+    "moduleId": 1,
+    "moduleKey": "CustomerTransfer",
+    "isActive": true,
+    "dateCreated": "2022-01-24T10:59:15.472Z",
+    "createdBy": "Test User",
+    "dateModified": "2022-01-24T10:59:15.472Z",
+    "modifiedBy": "Test User",
+    "createdSource": "JDE",
+    "modifiedSource": "JDE"
+  },
+  {
+    "id": 2,
+    "jobNumber": 426836,
+    "BusinessUnit": 5369941,
+    "CorpRigId": "E01D2659-8F78-E311-A7B6-0017A4771C44",
+    "Customer": 113054,
+    "moduleId": 2,
+    "moduleKey": "Usage",
+    "isActive": true,
+    "dateCreated": "2022-01-24T10:59:15.472Z",
+    "createdBy": "Test User",
+    "dateModified": "2022-01-24T10:59:15.472Z",
+    "modifiedBy": "Test User",
+    "createdSource": "JDE",
+    "modifiedSource": "JDE"
+  },
+  {
+    "id": 3,
+    "jobNumber": 426837,
+    "BusinessUnit": 5369941,
+    "CorpRigId": "E01D2659-8F78-E311-A7B6-0017A4771C44",
+    "Customer": 113054,
+    "moduleId": 3,
+    "moduleKey": "SalesOrder",
+    "isActive": true,
+    "dateCreated": "2022-01-24T10:59:15.472Z",
+    "createdBy": "Test User",
+    "dateModified": "2022-01-24T10:59:15.472Z",
+    "modifiedBy": "Test User",
+    "createdSource": "JDE",
+    "modifiedSource": "JDE"
+  }
+]

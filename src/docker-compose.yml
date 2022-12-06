@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  nov.es.tat.job.api:
+    image: ghcr.io/nationaloilwellvarco/tat-job/nov.es.tat.job.api:${TAG}
+    build:
+      context: .
+      dockerfile: Job/NOV.ES.TAT.Job.API/Dockerfile

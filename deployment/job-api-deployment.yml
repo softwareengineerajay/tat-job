@@ -1,0 +1,47 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: tat-job-api
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 80
+  selector:
+    app: tat-job-api
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tat-job-api
+  labels:
+    app: tat-job-api
+spec:
+  selector:
+    matchLabels:
+      app: tat-job-api
+  template:
+    metadata:
+      labels:
+        app: tat-job-api
+    spec:
+      containers:
+      - image: <IMAGE>
+        resources:
+          requests:
+            memory: "200Mi"
+            cpu: "100m"
+          limits:
+            memory: "500Mi"
+            cpu: "300m"
+        name: tat-job-api
+        ports:
+        - containerPort: 80
+        env:
+        - name: PATH_BASE
+          value: /jobsvc
+        envFrom:
+        - secretRef:
+            name: tatservice-secrets
+      imagePullSecrets:
+      - name: ghcr-io
